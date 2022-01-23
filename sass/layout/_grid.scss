@@ -1,0 +1,33 @@
+* , *::before ,*::after 
+{
+    box-sizing: border-box;
+    font-size: $font-size;
+}
+
+// container 
+
+
+.container{
+    @media  #{$inMobile}{
+        width: calc(100% - 30px);
+        margin: auto;
+        padding: 0 15px;
+    }
+    @media #{$min_inSmall}{
+        width: calc(100% - 80px);
+        margin: 0 50px;
+        padding: 0 15px;
+    }
+    @media #{$min-In-large} {
+        width: calc(100% - 80px);
+        margin: 0 50px;
+        padding: 0 15px;
+    }
+    @media #{$inDesktop} 
+    {
+        width: calc(100% - 80px);
+        margin: 0 50px;
+        padding: 0 15px;
+    }
+}
+

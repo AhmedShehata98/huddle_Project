@@ -1,0 +1,28 @@
+// Colors 
+//
+// ### Primary
+$Pink: hsl(322, 100%, 66%);
+$Light-Pink: hsl(321, 100%, 78%);
+$Light-Red: hsl(0, 100%, 63%);
+
+// ### Neutral
+
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Very-Pale-Blue: hsl(207, 100%, 98%);
+
+// Fonts
+//
+$font-size:16px;
+$bodyFontFamily: 'Open Sans', sans-serif;
+$HeadingsFontFamily: 'Poppins', sans-serif;
+
+// media querys
+$inMobile  : (max-width:767px  );
+$min_inSmall   : (min-width:768px  );
+$max_inSmall   : (max-width:768px  );
+$min-In-large : (min-width:992px  );
+$max_In-large : (max-width:992px  );
+$inDesktop : (min-width:1200px );
+
+//
+$navbarHeight:70px;

@@ -1,0 +1,15 @@
+%fontHeading{
+    font: {
+
+        size:2.3rem;
+        weight: bold;
+        family: $HeadingsFontFamily;
+    };
+}
+%fontBody{
+    font: {
+        size:0.8rem;
+        weight: 400;
+        family: $bodyFontFamily;
+    };
+}

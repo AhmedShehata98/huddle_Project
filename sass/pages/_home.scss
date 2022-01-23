@@ -1,0 +1,349 @@
+/* Start Home*/ 
+.home{
+    margin-top: $navbarHeight;
+    min-height: 100vh;
+    margin: 0 0 150px 0;
+    @include CENTER_ELEMENT_ROW(center);
+
+    >.container{
+        @include CENTER_ELEMENT_col(space-evenly);
+
+        >.text-box{
+            @include CENTER_ELEMENT_col(space-evenly);
+            gap: 10px;
+            margin-top: 100px;
+            >.heading{
+                @extend %fontHeading;
+                
+                color:$Very-Dark-Cyan;
+                @media #{$max_In-large} {
+                    font-size: 1.2rem;
+                }
+
+            }
+            >p.description{
+                @extend %fontBody;
+                max-width: 520px;
+                text-align: center;
+                color: darken($Very-Dark-Cyan, 80%);
+                opacity: 0.7;
+
+                @media #{$max_In-large} {
+                    font-size: 14px;
+                }
+            }
+
+
+        }
+
+        .screen-mockups-image{
+            width: 70%;
+            img{
+                max-width: 100%;
+            }
+        }
+
+        >.counters{
+            @include CENTER_ELEMENT_ROW(space-around);
+            width:100%;
+            margin: 50px 0;
+            
+            .count{
+                @include CENTER_ELEMENT_col(center);
+                align-items: flex-start !important;
+                width: fit-content;
+
+                .comunity-img{
+                    align-self: flex-start;
+                    @media #{$max-inSmall} {
+                        max-width: 30%;
+                    }
+
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                .count-text{
+                    @extend %fontHeading;
+                    margin: 5px 5px 15px 5px;
+                    color: $Very-Dark-Cyan;
+
+                    @media #{$max-inSmall} {
+                        font-size: 1.6rem;
+                    }
+                }
+                .count-head{
+                    color: $Very-Dark-Cyan;
+                    margin: 0;
+                    @extend %fontBody;
+                    opacity: 0.7;
+
+                    @media #{$max-inSmall} {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end Home*/ 
+/* Start grow section*/ 
+.grow{
+    position: relative;
+    min-height: 40vh;
+    background-color: $Very-Pale-Blue;
+    @include CENTER_ELEMENT_ROW(center);
+
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -140px;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-image: url('images/bg-section-top-desktop-1.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        @media #{$max_inSmall} {
+            background-image: url(../../images/bg-section-top-mobile-1.svg) !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            bottom: 99%;
+            top: initial;
+            
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: -140px;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-image: url('images/bg-section-bottom-desktop-1.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media #{$max_inSmall} {
+            background-image: url(../../images/bg-section-bottom-mobile-1.svg) !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            top: 65% !important;
+        }
+    }
+
+    .container{
+        @include CENTER_ELEMENT_ROW(center);
+        gap: 40px;
+
+        @media #{$max_inSmall} {
+            flex-wrap: wrap;
+        }
+
+        .grow-textBox{
+            @include CENTER_ELEMENT_col(center);
+            >h3.heading{
+                @extend %fontHeading;
+                color: $Very-Dark-Cyan;
+                margin-bottom: 10px;
+
+                @media #{$max-inSmall} {
+                    font-size: 1.5rem;
+                }
+            }
+            >p.description{
+                @extend %fontBody;
+                color: lighten($Very-Dark-Cyan, 15%);
+                max-width: 65%;
+                line-height: 15px;
+
+                @media #{$max_In-large} {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        >.img-box{
+            max-width: 40%;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+/* end grow section*/ 
+/*Start flowing converstations Section*/ 
+.flowing{
+    position: relative;
+    min-height: 40vh;
+    margin: 150px 0;
+    @include CENTER_ELEMENT_ROW(center);
+
+    .container{
+        @include CENTER_ELEMENT_ROW(center);
+        gap: 40px;
+
+        @media #{$max_inSmall} {
+            flex-wrap: wrap;
+        }
+
+        >.section-image{
+            max-width: 40%;
+
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .flowing-textBox{
+            @include CENTER_ELEMENT_col(center);
+
+            >h3.heading{
+                @extend %fontHeading;
+                color: $Very-Dark-Cyan;
+                max-width: 80%;
+                margin-bottom: 10px;
+
+                @media #{$max-inSmall} {
+                    font-size: 1.4rem;
+                }
+            }
+            
+            >p.description{
+                @extend %fontBody;
+                color: $Very-Dark-Cyan;
+                max-width: 70%;
+
+                @media #{$max_In-large} {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+}
+/*End flowing converstations Section*/ 
+/*start users Section*/ 
+.users{
+    position: relative;
+    min-height: 40vh;
+    background-color: $Very-Pale-Blue;
+    @include CENTER_ELEMENT_ROW(center);
+
+    &::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -140px;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-image: url('images/bg-section-top-desktop-2.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media #{$max_inSmall} {
+            background-image: url(../../images/bg-section-top-mobile-2.svg) !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            bottom: 99%;
+            top: initial;
+            
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: -170px;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-image: url('images/bg-section-bottom-desktop-2.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media #{$max_inSmall} {
+            background-image: url(../../images/bg-section-bottom-mobile-2.svg) !important;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+            top: 80% !important;
+            
+        }
+    }
+
+    .container{
+        @include CENTER_ELEMENT_ROW(center);
+        flex-direction: row-reverse;
+        gap: 40px;
+
+        @media #{$max_inSmall} {
+            flex-wrap: wrap;
+        }
+        .section-image{
+            max-width: 40%;
+
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .users-textBox{
+            @include CENTER_ELEMENT_col(center);
+
+            >h3.heading{
+                @extend %fontHeading;
+                color: $Very-Dark-Cyan;
+                max-width: 80%;
+                margin-bottom: 10px;
+
+                @media #{$max-inSmall} {
+                    font-size: 1.5rem;
+                }
+            }
+            
+            >p.description{
+                @extend %fontBody;
+                color: $Very-Dark-Cyan;
+                max-width: 70%;
+                
+                @media #{$max_In-large} {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+/*End users Section*/ 
+/*start ready Section*/ 
+.ready{
+    min-height: 40vh;
+    @include CENTER_ELEMENT_ROW(center);
+
+    .container{
+        @include CENTER_ELEMENT_col(center);
+        margin: 150px 0;
+        gap: 40px;
+
+        >.heading{
+            @extend %fontHeading;
+            color: $Very-Dark-Cyan;
+
+            @media #{$max-inSmall} {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+/*End ready Section*/ 

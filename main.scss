@@ -1,0 +1,23 @@
+// for Headings
+// 700
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+// for body
+// 400 - 600 -700 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+//
+// end import font 
+// start impoting files
+//
+// helpers
+@import 'sass/helper/variables';
+@import 'sass/helper/mixin';
+@import 'sass/helper/repeated';
+//
+//
+// pages and components and layout
+//
+@import 'sass/components/buttons';
+@import 'sass/pages/home';
+@import 'sass/layout/header';
+@import 'sass/layout/grid';
+@import 'sass/layout/footer';

@@ -1,0 +1,83 @@
+.home{
+    .container{
+        .text-box{
+
+            >.get-start{
+                display: inline-block;
+                height: 65px;
+                padding: 20px 30px;
+                font: {
+                    size: 1rem;
+                    family:$bodyFontFamily;
+                    weight: bold;
+                }
+                color: $Very-Pale-Blue;
+                border: none;
+                transition: background-color 0.3s cubic-bezier(0.95, 0.05, 0.795, 0.035) ,
+                border-color 0.3s ease-out ;
+                background-color: $Pink;
+                border-radius: 45px;
+                box-shadow: -4px 8px 20px #e4e4e4;
+                margin-bottom: 50px;
+                cursor: pointer;
+
+                @media #{$max-inSmall} {
+                    padding: 15px 20px !important;
+                }
+
+                &:hover{
+                    background-color: $Light-Pink;
+                    border-color: $Light-Pink;
+                    
+                }
+            }
+        }
+    }
+}
+.ready{
+
+    .container{
+        .get-started{
+            @extend %fontBody;
+            padding: 18px 25px;
+            color: $Very-Pale-Blue;
+            background-color: $Pink;
+            border: 2px solid $Pink;
+            cursor: pointer;
+            box-shadow: -4px 8px 20px #e4e4e4;
+            transition:background-color 0.3s ease-in , border-color 0.3s ease-out;
+            border-radius: 45px;
+
+
+            &:hover{
+                background-color: $Light-Pink;
+                border-color: $Light-Pink;
+                
+            }
+        }
+    }
+}
+
+footer{
+
+    .container{
+        .right-side{
+            .input-box{
+                button.subscribe{
+                    padding: 8px 20px;
+                    background-color: $Pink;
+                    border: none;
+                    color: $Very-Pale-Blue;
+                    @extend %fontBody;
+                    transition: background-color 0.3s ease-out;
+                    border-radius: 5px;
+
+                    &:hover{
+                        background-color: $Light-Pink;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

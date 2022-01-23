@@ -1,0 +1,73 @@
+/* Start Navbar*/ 
+.nav-bar{
+    @include CENTER_ELEMENT_ROW(center);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: $navbarHeight;
+    transition: background-color 0.3s ,box-shadow 0.4s  ;
+
+    &.Sticky{
+        width: 99%;
+        background-color: $Very-Pale-Blue;
+        border-radius: 30px;
+        margin: 5px;
+        transform: translateX(-3px);
+        box-shadow: 0px 0px 10px $Very-Dark-Cyan;
+    }
+
+    .container{
+        @include CENTER_ELEMENT_ROW(space-between);
+        height: $navbarHeight;
+
+        @media #{$max_inSmall} {
+            gap: 50px;
+        }
+        .logo{
+            @include CENTER_ELEMENT_ROW(center);
+            height: $navbarHeight;
+            gap: 10px;
+
+            .logo-image{
+                @media #{$max_inSmall} {
+                    width: 70%;
+                }
+                img{
+                    object-fit: cover;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        nav.tabs{
+            @include CENTER_ELEMENT_ROW(center);
+            li{
+                list-style: none;
+                width: 130px;
+
+                a{
+                    display: inline-block;
+                    padding: 5px 20px;
+                    text-decoration: none;
+                    color: $Light-Pink;
+                    font: {
+                        family:$bodyFontFamily;
+                        size: 1.1rem;
+                    }
+                    border: 2px solid $Light-Pink;
+                    transition: background-color 0.3s cubic-bezier(1, 0, 0, 1),
+                                color 0.3s ease-in;
+                    box-shadow: 0 0 5px $Light-Pink;
+                    border-radius: 45px;
+
+                    &:hover{
+                        background-color: $Light-Pink;
+                        color: $Very-Pale-Blue;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end Navbar*/ 
